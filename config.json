@@ -1,5 +1,5 @@
 {
-  "debug": true,
+  "debug": false,
   "usd_minorista": "https://api.estadisticasbcra.com/usd_of_minorista",
   "timeout": 60
 }
