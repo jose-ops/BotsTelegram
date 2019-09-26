@@ -1,0 +1,22 @@
+{
+	"ImportPath": "BotsTelegram",
+	"GoVersion": "go1.12",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/go-telegram-bot-api/telegram-bot-api",
+			"Comment": "v4.6.4-25-gb33efee",
+			"Rev": "b33efeebc78563cfeddf19563781cffb16aaabdf"
+		},
+		{
+			"ImportPath": "github.com/joho/godotenv",
+			"Comment": "v1.3.0-10-g5c0e6c6",
+			"Rev": "5c0e6c6ab1a0a9ef0a8822cba3a05d62f7dad941"
+		},
+		{
+			"ImportPath": "github.com/technoweenie/multipartstreamer",
+			"Comment": "v1.0.1",
+			"Rev": "a90a01d73ae432e2611d178c18367fbaa13e0154"
+		}
+	]
+}
