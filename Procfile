@@ -1,1 +1,1 @@
-worker: BotsTelegram
+worker: go run bot.go
