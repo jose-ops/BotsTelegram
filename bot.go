@@ -35,6 +35,7 @@ var configuration = &Configuration{}
 // init is invoked before main()
 func init() {
 	// loads values from .env into the system
+	log.Print("Loading env")
 	if err := gde.Load(); err != nil {
 		log.Print("No .env file found")
 	}
@@ -48,6 +49,8 @@ func init() {
 	}
 	env.BotToken = botToken
 	env.ApiToken = apiToken
+
+	log.Print("Loading config.json")
 	file, err := os.Open("config.json")
 	if err != nil {
 		return
@@ -60,7 +63,7 @@ func init() {
 }
 
 func main() {
-
+	log.Print("Starting bot")
 	bot, err := tgbotapi.NewBotAPI(env.BotToken)
 	if err != nil {
 		log.Panic(err)
